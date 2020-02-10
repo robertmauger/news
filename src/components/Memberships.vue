@@ -9,19 +9,19 @@
     </header>
 
     <div class="container">
-      {{memberships.id}}
+      <!-- {{memberships}} -->
       <div class="row">
         
-          <div class="radio-block" v-for="memberships in memberships" :key="memberships.id">
-            <MembershipItem v-bind:memberships="memberships" /><br><br><br><br><br>
-            {{memberships.id}}<br>sskf-=-=00000
+          <div class="radio-block" v-for="memberships1 in memberships" :key="memberships1.id">
+            
+            {{memberships1.name}}<br>
 
 
             
           </div>
 
            <!-- <span v-if="memberships.icon.length<=1"> -->
-          <MembershipChoice v-bind:memberships="memberships" />
+         
        
 
         <!-- v-if="Math.random() > 0.5" -->
@@ -31,13 +31,13 @@
 </template>
 
 <script>
-import MembershipItem from "./MembershipItem.vue";
-import MembershipChoice from "./MembershipChoice.vue";
+
+
 export default {
   name: "Memberships",
   components: {
-    MembershipItem,
-    MembershipChoice
+   
+   
   },
   props: ["memberships"]
 };

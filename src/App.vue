@@ -1,5 +1,5 @@
 <template>
-  <div id="app">{{title}}
+  <div id="app">
      <Memberships v-bind:memberships="restApiItems" />
   </div>
  
@@ -8,7 +8,7 @@
 
 <script>
 import Memberships from './components/Memberships'
-import {mapState} from 'vuex'
+
 import axios from "axios";
 export default {
   name: "app",
@@ -22,19 +22,12 @@ export default {
     }
   },
   created(){
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+    axios.get('https://jsonplaceholder.typicode.com/users?_limit=10')
     .then( res => this.restApiItems = res.data)
     // .catch(err => console.log(err))
 
   },
- computed: {
-    ...mapState([
-      'title',
-      'membershipsType',
-      'status'
-    ]),
-    // Other properties
-  }
+
 };
 </script>
 
