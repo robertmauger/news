@@ -6,12 +6,16 @@
 
     <div class="container">
       <!-- {{memberships}} -->
-      <div class="row">
+      
         
           <div class="radio-block" v-for="memberships1 in memberships" :key="memberships1.id">
-            {{memberships1.name}}         
-          </div>
-      </div>
+            <header>{{memberships1.name}} </header> 
+            <div>{{memberships1.address.street}}</div>
+            <div>{{memberships1.address.suite}}</div>
+            <div>{{memberships1.address.city}}</div>
+            <div>{{memberships1.address.zipcode}}</div>
+           </div>
+     
     </div>
   </section>
 </template>
@@ -43,14 +47,14 @@ body {
   border-left: solid 1px lightgrey;
 }
 
-header .enumeration {
- 
-  background: #1178ce;
-  
+
+.radio-block{
+  border: solid 1px gray;
+  margin:21px;
+  padding: 10px;
+  border-radius: 15px;
 }
 
-header {
-  position: relative;
-}
+
 
 </style>
