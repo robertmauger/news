@@ -1,0 +1,17 @@
+
+
+
+{
+    description: "A Publisher is a person or company that handles the business side of music. Publishers may control the copyrights of a musical composition, licensing, etc.",
+
+app-fee: "$50 APPLICATION FEE",
+refundable-policy: "non-refundable",
+
+
+
+ requirement1: "Legal Name",
+ requirement2: "Mailing Address",
+ requirement3: "Valid Email Address",
+ requirement4: "SSN/ITIN or EIN",
+ requirement5: "Must be 18 or older"
+}
