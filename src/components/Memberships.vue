@@ -53,6 +53,7 @@ body {
   margin:21px;
   padding: 10px;
   border-radius: 15px;
+  font-family: monospace;
 }
 
 .radio-block header{
