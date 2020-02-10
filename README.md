@@ -1,4 +1,4 @@
-# ascap-test
+# test
 
 ## Project setup
 ```
