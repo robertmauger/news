@@ -42,7 +42,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 70%;
+  width: 25%;
   padding-left: 48px;
   border-left: solid 1px lightgrey;
 }
@@ -53,6 +53,13 @@ body {
   margin:21px;
   padding: 10px;
   border-radius: 15px;
+}
+
+
+
+.radio-block:hover {
+    border-color: #1178ce;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.5);
 }
 
 
