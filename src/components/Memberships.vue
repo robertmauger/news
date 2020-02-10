@@ -55,7 +55,12 @@ body {
   border-radius: 15px;
 }
 
-
+.radio-block header{
+    border-radius: 4px;
+    background: cornflowerblue;
+    color: #fff;
+    padding: 3px;
+}
 
 .radio-block:hover {
     border-color: #1178ce;
